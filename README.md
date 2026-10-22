@@ -25,6 +25,10 @@ El repositorio está estructurado cronológicamente para evidenciar el progreso 
     *   **Laboratorios:** **TryHackMe** (Security Analyst Nivel 1 y 2).
     *   **Cloud:** Google Cloud Professional Security Engineer y proyectos de portafolio final.
 
+## 🧪 Laboratorios Blue Team / SOC
+
+En **[Labs](./Labs)** documento laboratorios prácticos que transforman cada módulo de Cisco Networking Academy en un ejercicio defensivo: reproducción de una vulnerabilidad en entorno aislado, detección con Wireshark/logs (mapeada a **MITRE ATT&CK**) y mitigación verificada.
+
 ## 🛠️ Metodología
 *   **Híbrido de Idiomas:** El código, variables, y los mensajes de commit de Git se escriben estrictamente en **Inglés** para acostumbrar la mente al estándar de la industria. Las explicaciones conceptuales y apuntes (como este README) se mantienen en **Español** para maximizar la asimilación de la teoría.
 *   **Project-Based Learning:** Menos tutoriales, más código. Aprendiendo a través de la construcción de herramientas y resolución de problemas reales.
