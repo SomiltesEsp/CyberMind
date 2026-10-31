@@ -1,0 +1,5 @@
+# Placeholder for Packet Tracer screenshots and PDU inspection captures.
+# Expected captures:
+# - topology.png (Topología general en Packet Tracer)
+# - port_inspection_r2.png (Inspección de puertos / PDU en Fa0/1 de R2 con MAC 0001.C972.4202)
+# - ping_execution.png (Ejecución de ping de PC0 a Web Server)

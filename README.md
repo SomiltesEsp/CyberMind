@@ -1,4 +1,5 @@
 <!-- [Agent-Architect] 2026-10-22: Actualización integral del README central alineado con la estrategia Blue Team / SOC y hoja de ruta de empleabilidad remota. -->
+<!-- [Agent-TechWriter] 2026-10-31: Añadidas 2 insignias Cisco (Networking Basics, Introduction to Cybersecurity) y carpeta Labs/Technical_Reports en la estructura. -->
 
 # CyberMind 🧠🔐
 
@@ -7,6 +8,10 @@
 ![Methodology](https://img.shields.io/badge/methodology-80%2F20%20Hands--on-orange?style=flat-square)
 ![Frameworks](https://img.shields.io/badge/frameworks-MITRE%20ATT%26CK%20%7C%20CIS%20v8%20%7C%20NIST-red?style=flat-square)
 ![Target](https://img.shields.io/badge/target-Remote%20Security%20Analyst-informational?style=flat-square)
+
+[![Cisco Networking Basics](https://img.shields.io/badge/Cisco-Networking%20Basics-049fd9?style=flat-square&logo=cisco&logoColor=white)](https://www.credly.com/badges/06b55848-1e82-4d4b-b177-d993599777fe/public_url)
+![Cisco Introduction to Cybersecurity](https://img.shields.io/badge/Cisco-Introduction%20to%20Cybersecurity-049fd9?style=flat-square&logo=cisco&logoColor=white)
+<!-- [PENDIENTE] Añadir enlace Credly de la insignia 'Introduction to Cybersecurity' (no disponible en inbox/raw_notes.md). -->
 
 Repositorio central y portafolio técnico de mi camino hacia roles de **Junior SOC Analyst / Blue Team / Cloud Security**. Este espacio documenta aprendizaje práctico acelerado mediante *Proof of Work* (evidencias reproducibles, análisis de tráfico, detección de amenazas y mitigación verificada).
 
@@ -75,6 +80,8 @@ CyberMind/
 │   └── family_business_strategy.md
 ├── Labs/                   # Reportes técnicos de laboratorios defensivos
 │   ├── README.md           # Índice de laboratorios
+│   ├── Technical_Reports/  # Reportes de cierre de Networking Basics (L3, L4, L7)
+│   ├── Networking_Devices_and_Initial_Configuration/  # Estructura de los 19 labs del próximo curso
 │   └── YYYY-MM-DD_<slug>/  # Reporte técnico + capturas (assets)
 ├── Phase_1_Foundations/    # Código de fundamentos (Python, Linux, Networking)
 │   ├── Python_Basics/
