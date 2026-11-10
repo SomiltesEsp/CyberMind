@@ -1,5 +1,6 @@
 <!-- [Agent-Architect] 2026-10-22: Actualización integral del README central alineado con la estrategia Blue Team / SOC y hoja de ruta de empleabilidad remota. -->
 <!-- [Agent-TechWriter] 2026-10-31: Añadidas 2 insignias Cisco (Networking Basics, Introduction to Cybersecurity) y carpeta Labs/Technical_Reports en la estructura. -->
+<!-- [Agent-Architect] 2026-11-09: Integración de Linux & Kali CLI Mastery, SOC Analyst Blueprint (4 piezas del candado) y escuadrón de agentes de estudio. -->
 
 # CyberMind 🧠🔐
 
@@ -19,6 +20,7 @@ Repositorio central y portafolio técnico de mi camino hacia roles de **Junior S
 
 ## 📑 Tabla de Contenidos
 - [🎯 Visión y Hoja de Ruta](#-visión-y-hoja-de-ruta)
+- [🛡️ Blueprint de Operaciones SOC & Triada Defensiva](#️-blueprint-de-operaciones-soc--triada-defensiva)
 - [🧪 Laboratorios Prácticos (Blue Team / SOC)](#-laboratorios-prácticos-blue-team--soc)
 - [🧱 Fases de Desarrollo Técnico](#-fases-de-desarrollo-técnico)
 - [🛠️ Metodología y Herramientas](#️-metodología-y-herramientas)
@@ -28,12 +30,24 @@ Repositorio central y portafolio técnico de mi camino hacia roles de **Junior S
 
 ## 🎯 Visión y Hoja de Ruta
 
-El proyecto aplica la **Regla 80/20**:
-* **80% Práctica Técnica:** Creación de topologías, captura e inspección de paquetes con Wireshark, administración en Linux/Windows y ejercicios prácticos de detección y respuesta.
-* **20% Documentación de Alto Impacto:** Transformación de notas de laboratorio en reportes técnicos estandarizados y publicaciones especializadas para la comunidad infosec.
+El proyecto aplica la **Regla 80/20** y la filosofía de **«Paso firme, vista larga y mala leche»**:
+* **80% Práctica Técnica:** Creación de topologías, captura e inspección de paquetes con Wireshark, administración avanzada en Kali Linux CLI y ejercicios prácticos de detección y respuesta en SIEM.
+* **20% Documentación de Alto Impacto:** Transformación de notas de laboratorio en reportes técnicos estandarizados y mini-informes ejecutivos de incidente (**Identificación**, **Acción** y **Riesgo**).
 
 > 📄 Consulta la estrategia detallada y los objetivos de carrera en:  
 > **[Hoja de Ruta Estratégica (Roadmap Remoto)](./docs/career_roadmap_remote_soc.md)**
+
+---
+
+## 🛡️ Blueprint de Operaciones SOC & Triada Defensiva
+
+El proyecto articula la detección y el triaje (*triage*) de incidentes mediante una conexión directa entre tres pilares:
+1. **Linux CLI & Logs Locales:** Auditoría de eventos en `/var/log/auth.log`, `syslog` y `journalctl`.
+2. **El Radar Central (SIEM):** Correlación de eventos y reglas de detección en **Wazuh** y **Splunk**.
+3. **El Microscopio Forense:** Inspección profunda de paquetes con **Wireshark** y `tcpdump` (`.pcap`).
+
+> 📄 Consulta el diseño de la triada y el modelo de las 4 piezas de empleabilidad en:  
+> **[SOC Analyst Blueprint: Linux CLI, Wireshark & SIEM](./docs/soc_analyst_blueprint.md)**
 
 ---
 
@@ -54,7 +68,7 @@ En la sección **[Labs/](./Labs)** se documentan laboratorios prácticos con enf
 
 | Fase | Enfoque Principal | Estado |
 |---|---|---|
-| **[Phase 1: Foundations](./Phase_1_Foundations)** | Redes (Cisco CCNA ITN / Networking Basics), Wireshark, Linux CLI, Bash y automatización con Python. | 🟡 En progreso |
+| **[Phase 1: Foundations](./Phase_1_Foundations)** | Redes (Cisco CCNA ITN / Networking Basics), Wireshark, [Linux & Kali CLI Mastery](./Phase_1_Foundations/Linux_Kali_CLI) (6 niveles), Bash y automatización con Python. | 🟡 En progreso |
 | **Phase 2: SOC Operations & SIEM** | Plataformas prácticas (TryHackMe SOC Level 1), análisis de logs (Sysmon/Syslog), despliegue de SIEM (Wazuh/Splunk) y CompTIA Security+. | ⚪ Planificado |
 | **Phase 3: Defensive Engineering & Cloud** | Google Cloud Platform Security (IAM, VPC, Audit Logs), automatización de detección y preparación para entrevistas remotas. | ⚪ Planificado |
 
@@ -65,7 +79,7 @@ En la sección **[Labs/](./Labs)** se documentan laboratorios prácticos con enf
 * **Estándar de Idioma:** Código, variables, configuración de equipos y mensajes de commit de Git se redactan en **Inglés** siguiendo las mejores prácticas de la industria global. La documentación y explicaciones analíticas se redactan en **Español** para garantizar claridad conceptual.
 * **Stack de Herramientas:**
   * **Simulación y Redes:** Cisco Packet Tracer, GNS3, Wireshark, `tcpdump`, `nmap`.
-  * **Sistemas y Scripting:** Linux (Ubuntu/Debian, Kali), Windows PowerShell, Python 3, Bash.
+  * **Sistemas y Scripting:** Linux (Debian, Kali Linux CLI), Windows PowerShell, Python 3, Bash.
   * **Defensa y Logs:** Sysmon, Zeek, Suricata, Wazuh, Splunk Free.
   * **Marcos de Referencia:** MITRE ATT&CK, CIS Controls v8, NIST CSF 2.0.
 
@@ -75,16 +89,22 @@ En la sección **[Labs/](./Labs)** se documentan laboratorios prácticos con enf
 
 ```text
 CyberMind/
-├── docs/                   # Documentación estratégica, roadmaps y guías
-│   ├── career_roadmap_remote_soc.md
+├── docs/                   # Documentación estratégica, roadmaps y blueprints
+│   ├── career_roadmap_remote_soc.md  # Hoja de ruta hacia rol remoto SOC 2027
+│   ├── soc_analyst_blueprint.md      # Framework de 4 piezas, triada defensiva y tracker
+│   ├── cv_technical_profile.md       # Perfil ATS optimizado
+│   ├── social_launch_kit.md          # Kit de publicaciones profesionales
 │   └── family_business_strategy.md
 ├── Labs/                   # Reportes técnicos de laboratorios defensivos
 │   ├── README.md           # Índice de laboratorios
 │   ├── Technical_Reports/  # Reportes de cierre de Networking Basics (L3, L4, L7)
-│   ├── Networking_Devices_and_Initial_Configuration/  # Estructura de los 19 labs del próximo curso
+│   ├── Networking_Devices_and_Initial_Configuration/  # Estructura de 19 labs de Cisco
 │   └── YYYY-MM-DD_<slug>/  # Reporte técnico + capturas (assets)
-├── Phase_1_Foundations/    # Código de fundamentos (Python, Linux, Networking)
-│   ├── Python_Basics/
+├── Phase_1_Foundations/    # Código de fundamentos (Linux, Python, Redes)
+│   ├── Linux_Kali_CLI/     # Programa de 6 niveles de maestría en terminal Kali
+│   │   ├── README.md       # Hoja de ruta y reglas del instructor
+│   │   └── 01_survival_and_identity.md # Labs 1.1 y 1.2
+│   ├── Python_Basics/      # Scripts de automatización en Python
 │   └── README.md
 └── README.md               # Este archivo
 ```
