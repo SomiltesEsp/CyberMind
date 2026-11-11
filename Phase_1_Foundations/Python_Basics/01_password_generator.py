@@ -18,3 +18,4 @@ if __name__ == "__main__":
     print("Welcome to the Secure Password Generator")
     # TODO: Get user input for password length and call the function
     # print(f"Your secure password is: {generate_password()}")
+
