@@ -21,6 +21,55 @@
 
 ---
 
+## 🧰 Preparación del Entorno de Trabajo
+
+Este módulo asume que el aprendizaje se realiza en un entorno Linux real. En equipos Windows, la recomendación más estable es usar **WSL2** con una distribución como **Ubuntu** o **Kali**. Esto permite entrenar con comandos reales de Linux sin abandonar el sistema principal.
+
+### Instalación recomendada (Windows)
+
+```powershell
+wsl --install
+# o si quieres elegir una distribución:
+wsl --list --online
+wsl --install -d Ubuntu
+```
+
+### Validación rápida del entorno
+
+```bash
+whoami
+pwd
+ls -la
+uname -a
+```
+
+### Ruta de aprendizaje sugerida
+
+- **Windows Host:** tareas normales del sistema y editor de código.
+- **WSL / Ubuntu / Kali:** trabajo principal en terminal, scripting, red, auditoría y detección.
+- **Objetivo real:** operar con confianza en línea de comandos como si fuera un entorno profesional de SOC / SysAdmin.
+
+### Comandos base para practicar cada día
+
+```bash
+pwd
+ls -la
+cd /etc
+cat /etc/os-release
+whoami
+id
+sudo -l
+ps aux
+top
+df -h
+free -h
+ip a
+curl -I https://example.com
+grep -R "error" /var/log 2>/dev/null | head
+```
+
+---
+
 ## 🧭 Plan de Entrenamiento Progresivo (6 Niveles)
 
 ```mermaid

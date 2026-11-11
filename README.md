@@ -77,6 +77,7 @@ En la sección **[Labs/](./Labs)** se documentan laboratorios prácticos con enf
 ## 🛠️ Metodología y Herramientas
 
 * **Estándar de Idioma:** Código, variables, configuración de equipos y mensajes de commit de Git se redactan en **Inglés** siguiendo las mejores prácticas de la industria global. La documentación y explicaciones analíticas se redactan en **Español** para garantizar claridad conceptual.
+* **Terminal-First Workflow:** La práctica real de TI y ciberseguridad se ejecuta principalmente desde la línea de comandos. En equipos con Windows, el entorno recomendado es **WSL2 + Ubuntu/Kali** para aprender comandos reales de Linux y preparar un perfil técnico profesional.
 * **Stack de Herramientas:**
   * **Simulación y Redes:** Cisco Packet Tracer, GNS3, Wireshark, `tcpdump`, `nmap`.
   * **Sistemas y Scripting:** Linux (Debian, Kali Linux CLI), Windows PowerShell, Python 3, Bash.
